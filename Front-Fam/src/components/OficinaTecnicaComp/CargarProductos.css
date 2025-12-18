@@ -1,0 +1,138 @@
+.cargar-productos-container {
+  width: 25%; /* Menos ancho */
+  height: 300px; /* Más alto */
+  background-color: black;
+  color: rgb(79, 182, 230);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px 20px 15px 40px !important; /* Padding con left forzado */
+  margin-top: 10px;
+  margin-left: 3%; /* Para alinear con CargarTarea */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cargar-productos-container h5 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.lista-productos {
+  max-height: 260px; /* Más alto para scroll */
+  overflow-y: auto;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: black; 
+  background-color: #ffffff;
+}
+
+.lista-productos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-productos li {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.lista-productos li.seleccionado {
+  background-color: #555;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+}
+
+.botones button {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 3px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botones button:disabled {
+  background-color: #222;
+  cursor: not-allowed;
+}
+
+.botones button:hover:not(:disabled) {
+  background-color: #666;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* asegúrate de que esté encima del header */
+}
+
+.modal-contenido {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Estilos del formulario */
+.formulario-empleado .form-grupo {
+  margin-bottom: 15px;
+}
+
+.formulario-empleado label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario-empleado input,
+.formulario-empleado select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.boton-guardar,
+.boton-cancelar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton-guardar {
+  background-color: #28a745;
+  color: white;
+}
+
+.boton-cancelar {
+  background-color: #dc3545;
+  color: white;
+}

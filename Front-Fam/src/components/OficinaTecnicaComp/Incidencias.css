@@ -1,0 +1,148 @@
+.incidencias-container {
+  width: 40.5% !important; /* Ajustado para ocupar tamaño combinado de CargarProductos y ArchivoProductos */
+  height: 300px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 16px 20px 16px 16px !important; /* Padding derecho ajustado a 20px para respetar padding de Monitoreo e Informes */
+  margin-top: 10px !important; /* Subido un poco para igualar posición vertical */
+  margin-left: 0% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  position: relative;
+  /* Eliminado top: -10px para evitar desalineación vertical */
+  justify-content: flex-start;
+}
+
+/* El resto del archivo permanece igual */
+
+.incidencias-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Volver a separar título y navegación */
+  margin-bottom: 6px;
+  margin-top: 0;
+  padding-top: 0;
+  color: #ff9800;
+  gap: 16px;
+}
+
+.incidencias-header-row h5 {
+  margin: 0 auto;
+  font-size: 1.3em;
+  text-align: center;
+  flex: 1;
+}
+
+.incidencias-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.incidencias-paginador {
+  color: #bbb;
+  font-size: 0.95em;
+  min-width: 36px;
+  text-align: center;
+}
+
+.form-incidencia {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.fila-doble {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.fila-doble .alineado-row {
+  flex: 1;
+  min-width: 0;
+}
+
+.alineado-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.alineado-row label {
+  min-width: 70px;
+  text-align: left;
+  padding-left: 4px;
+}
+
+.alineado-row input {
+  flex: 1;
+  min-width: 0;
+  max-width: 220px;
+  width: 100%;
+  font-size: 0.95em;
+  padding: 2px 6px;
+}
+
+.descripcion-div label {
+  min-width: 80px;
+  padding-left: 4px;
+}
+
+.descripcion-div textarea {
+  width: 100%;
+  font-size: 0.95em;
+  padding: 4px 6px;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #181818;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.visto-btn {
+  margin-top: 8px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 16px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-self: flex-end;
+  display: block;
+}
+
+.incidencia-vacia {
+  color: #aaa;
+  font-style: italic;
+  padding: 20px 0;
+}

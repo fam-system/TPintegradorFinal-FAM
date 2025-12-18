@@ -1,0 +1,36 @@
+.login-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container label {
+    color: black; /* Asegura que los labels 'Usuario' y 'Contraseña' sean blancos */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    min-height: 500px; /* Subí el alto a 500px */
+    background-color: #333;
+    border-radius: 8px;
+    padding: 2rem;
+    color: white;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-button-container {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.welcome-title {
+    margin-top: 20px; /* Más espacio arriba del título */
+    text-align: center; /* Centrado */
+}

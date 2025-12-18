@@ -1,0 +1,93 @@
+.archivo-productos-container {
+  width: 25.5%;
+  height: 300px;
+  background-color: black;
+  color: rgb(79, 182, 230);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px 20px 15px 40px !important;
+  margin-top: 10px;
+  margin-left: 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+
+  .lista-archivos {
+  max-height: 260px;
+  overflow-y: auto;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #000;
+  background-color: #fff;
+  }
+
+  .lista-archivos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  .lista-archivos li {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #000;
+  }
+
+  .lista-archivos li.seleccionado {
+  background-color: #555;
+  color: #fff;
+  }
+
+  .botones {
+  display: flex;
+  gap: 10px;
+  }
+
+  .botones button {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 3px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+
+  .botones button:disabled {
+  background-color: #222;
+  cursor: not-allowed;
+  }
+
+  .botones button:hover:not(:disabled) {
+  background-color: #666;
+  }
+
+  /* Contenedor flex para posicionar CargarProductos y ArchivoProductos lado a lado */
+  .productos-archivos-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 10px;
+  }
+
+.archivo-productos-box input,
+.archivo-productos-box textarea {
+  color: #000 !important;
+  background: #fff !important;
+}
+
+.archivo-productos-container input,
+.archivo-productos-container textarea {
+  color: #000 !important;
+  background: #fff !important;
+}
+
+.archivo-productos-container h5 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,119 @@
+.cargar-tarea-container {
+  margin-top: 0px;
+  width: 51.44%;
+  height: auto;
+  padding-left: 40px !important;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  margin-left: 3.2%;
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+.cargar-tarea-titulo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centrar el título horizontalmente */
+  align-items: center;
+  margin-top: 10px; /* Espacio arriba del título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.cargar-tarea-row {
+  width: 100%;
+}
+
+.cargar-tarea-select {
+  width: 100px; /* Selector más ancho */
+  font-size: 1rem;
+}
+
+.cargar-tarea-input {
+  width: 80px;
+}
+
+.cargar-tarea-container .form-group {
+  margin-bottom: 0;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.cargar-tarea-container .form-label {
+  margin-bottom: 4px;
+}
+
+.cargar-tarea-container button {
+  height: 45px; /* Botón un poco más alto */
+  width: 100%; /* Botón más ancho */
+  align-self: flex-end;
+  margin-left: 10px; /* Mover un poco a la derecha */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cargar-tarea-boton {
+  font-size: 1.3rem; /* Aumentar un poco más el tamaño de la fuente */
+  height: 60px; /* Mantener la altura del botón */
+  width: 140%; /* Aumentar un poco más el ancho del botón */
+  margin-left: -10px; /* Mover un poco el botón hacia la izquierda */
+}
+
+/* Agregar scroll al menú desplegable del dropdown de react-bootstrap */
+.cargar-tarea-container .dropdown-menu {
+  max-height: 150px;
+  overflow-y: auto;
+  width: 150px; /* Asegurar que el ancho coincida con el select */
+}
+
+/* Hacer el botón de cargar más grande */
+.cargar-tarea-container button[type="submit"] {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+/* Estilos para react-select con fondo negro y texto blanco */
+.react-select__control {
+  background-color: black !important;
+  border-color: white !important;
+  color: white !important;
+  width: 150px !important;
+  min-width: 150px !important;
+  box-sizing: border-box;
+}
+
+.react-select__single-value {
+  color: white !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.react-select__menu {
+  background-color: black !important;
+  color: white !important;
+}
+
+.react-select__option {
+  background-color: black !important;
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.react-select__option--is-focused {
+  background-color: #444 !important;
+  color: white !important;
+}
+
+.react-select__option--is-selected {
+  background-color: #666 !important;
+  color: white !important;
+}

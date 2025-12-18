@@ -1,0 +1,141 @@
+/* Botón para abrir modal */
+.boton-abrir {
+    background-color: rgb(79, 182, 230);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+
+  .boton-abrir:hover {
+    background-color: rgb(59, 162, 210);
+  }
+
+  .crear-puesto {
+    background-color: rgb(79, 182, 230);
+  }
+
+  .crear-puesto:hover {
+    background-color: rgb(59, 162, 210);
+  }
+  
+  /* Fondo del modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Contenido del modal */
+  .modal-contenido {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: aparecer 0.3s ease;
+  }
+  
+  .modal-contenido h2 {
+    margin-bottom: 15px;
+    text-align: center !important;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Animación 
+  @keyframes aparecer {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }*/
+  
+  /* Formulario */
+  .formulario-puesto .form-grupo {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario-puesto label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+  }
+
+  .formulario-puesto input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    
+  }
+
+  .formulario-puesto input:focus {
+    border-color: #4caf50;
+  }
+  
+  /* Botones dentro del modal */
+  .form-botones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .boton-cancelar {
+    background-color: #bbb;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .boton-cancelar:hover {
+    background-color: #999;
+  }
+  
+  .boton-guardar {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .boton-guardar:hover {
+    background-color: #0069d9;
+  }
+
+  .mensaje-exito {
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .mensaje-error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+  }

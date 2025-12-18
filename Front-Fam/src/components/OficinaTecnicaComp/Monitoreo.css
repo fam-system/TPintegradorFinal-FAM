@@ -1,0 +1,141 @@
+.monitoreo-container {
+  position: relative;
+  margin-top: 0px;
+  width: 40.2%;
+  max-height: 250px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 10px 10px 10px 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  left: -50px;
+}
+
+.monitoreo-titulo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+
+.monitoreo-titulo {
+  color: #81c784;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  font-family: 'Arial', 'Segoe UI', sans-serif;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+.monitoreo-fila {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 0;
+  border-bottom: 1px solid #222;
+}
+
+.monitoreo-tipo {
+  min-width: 130px;
+  font-size: 20px;
+  color: #bbb;
+}
+
+.monitoreo-nombre {
+  flex: 1;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.circulo {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid #888;
+  margin-left: 8px;
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.3);
+}
+
+.circulo-rojo {
+  background: radial-gradient(circle at 30% 30%, #ff7675, #e74c3c 80%);
+}
+
+.circulo-amarillo {
+  background: radial-gradient(circle at 30% 30%, #ffeaa7, #f1c40f 80%);
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.9);
+  border-radius: 5px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  color: white;
+  border: 1px solid #999;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #81c784;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.modal-content button {
+  display: block;
+  margin: 16px auto 0 auto;
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #666;
+}´
+
+.monitoreo-expandido {
+  background-color: #111;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.monitoreo-expandido p {
+  margin: 3px 0;
+}

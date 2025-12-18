@@ -1,0 +1,50 @@
+/* Contenedor padre: ocupa la mitad del ancho de la pantalla y centra el contenido */
+.productos-archivos-container {
+    width: 40.5% !important; /* Igual que incidencias-container */
+    height: 300px; /* Misma altura */
+    background-color: black; /* Mismo fondo */
+    color: white; /* Mismo texto */
+    border: 1px solid white; /* Mismo borde */
+    border-radius: 5px; /* Mismo redondeo */
+    padding: 16px 20px !important; /* Padding similar */
+    margin-top: 10px !important; /* Mismo margen superior */
+    margin-left: 0% !important; /* Alineación izquierda */
+    display: flex;
+    gap: 20px; /* Espacio interno entre Productos y Archivos */
+    box-sizing: border-box;
+  }
+
+  /* Hijos: ocupan la mitad del contenedor padre menos la mitad del gap */
+  .cargar-productos-container,
+.archivo-productos-container {
+  width: 100% !important; /* Ocupa todo el espacio asignado por el padre */
+  height: 100%; /* Altura completa del contenedor padre */
+  margin: 0 !important; /* Elimina márgenes individuales */
+  padding: 15px !important; /* Ajusta según necesidad */
+}
+
+  /* Ajustes específicos que ya tenías para cargar productos */
+  .cargar-productos-container h5,
+  .archivo-productos-container h5 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  /* Listas con scroll */
+  .lista-productos,
+  .lista-archivos {
+    max-height: 260px;
+    overflow-y: auto;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .contenedor-principal {
+    display: flex;
+    gap: 20px; /* Espacio entre ProductosYArchivos e Incidencias */
+    align-items: flex-start; /* Alinear al inicio (evita estiramiento vertical) */
+  }
